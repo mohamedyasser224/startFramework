@@ -1,0 +1,5 @@
+section{
+    background-color: #1abc9c;
+    min-height: calc(-90px + 100vh);
+    color: rgb(44, 62, 80);
+}

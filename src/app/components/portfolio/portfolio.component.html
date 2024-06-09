@@ -1,0 +1,67 @@
+<section class="text-center py-3">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <h2 class="fw-bold">PORTFOLIO COMPONENT</h2>
+        <div class="star-icon">
+            <i class="fa-solid fa-star"></i>
+        </div>
+    </div>
+    <div class="container my-4 ">
+        <div class="row gy-4 mb-5">
+            <div class="col-md-4 text-center layer-contain" (click)="displayModal('poert1')">
+                <div class="img-container rounded-3 overflow-hidden">
+                    <img class="w-100" [src]="imgsArray[0]">
+                    <div class="layer d-flex flex-column justify-content-center rounded-3">
+                        <i class="fa-solid fa-plus fa-5x text-white"></i>
+                    </div>
+                </div>
+                  
+            </div>
+            <div class="col-md-4 text-center layer-contain" (click)="displayModal('port2')">
+                <div class="img-container rounded-3 overflow-hidden">
+                    <img class="w-100" [src]="imgsArray[1]">
+                </div>
+                <div class="layer d-flex flex-column justify-content-center rounded-3">
+                    <i class="fa-solid fa-plus fa-5x text-white"></i>
+                </div>
+            </div>
+            <div class="col-md-4 text-center layer-contain" (click)="displayModal('port3')">
+                <div class="img-container rounded-3 overflow-hidden">
+                    <img class="w-100" [src]="imgsArray[2]">
+                </div>
+                <div class="layer d-flex flex-column justify-content-center rounded-3">
+                    <i class="fa-solid fa-plus fa-5x text-white"></i>
+                </div>
+            </div>
+            <div class="col-md-4 text-center layer-contain" (click)="displayModal('poert1')">
+                <div class="img-container rounded-3 overflow-hidden">
+                    <img class="w-100" [src]="imgsArray[0]">
+                </div>
+                <div class="layer d-flex flex-column justify-content-center rounded-3">
+                    <i class="fa-solid fa-plus fa-5x text-white"></i>
+                </div>
+            </div>
+            <div class="col-md-4 text-center layer-contain" (click)="displayModal('port2')">
+                <div class="img-container rounded-3 overflow-hidden">
+                    <img class="w-100" [src]="imgsArray[1]">
+                </div>
+                <div class="layer d-flex flex-column justify-content-center rounded-3">
+                    <i class="fa-solid fa-plus fa-5x text-white"></i>
+                </div>
+            </div>
+            <div class="col-md-4 text-center layer-contain" (click)="displayModal('port3')">
+                <div class="img-container rounded-3 overflow-hidden">
+                    <img class="w-100" [src]="imgsArray[2]">
+                </div>
+                    <div class="layer d-flex flex-column justify-content-center rounded-3">
+                        <i class="fa-solid fa-plus fa-5x text-white"></i>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="clicked == true" (click)="hideModal()" class="my-modal w-100 vh-100 position-fixed position-absolute top-0 start-0 d-flex justify-content-center align-items-center">
+        <div>
+            <img [src]="imgSrc" class="rounded-3">
+        </div>
+    </div>
+    
+</section>

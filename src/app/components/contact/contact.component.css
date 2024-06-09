@@ -1,0 +1,31 @@
+section{
+    margin-top:90px;
+    color: rgb(44, 62, 80);
+}
+.star-icon{
+    position: relative;
+}
+.star-icon::after{
+    content:"";
+    background-color: black;
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: -90px;
+    transform: translateY(-50%);
+}
+.star-icon::before{
+    content:"";
+    background-color: black;
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    right: -90px;
+    transform: translateY(-50%);
+}
+.btn-custom{
+    background-color: #1abc9ce6;
+    color: white;
+}

@@ -1,0 +1,27 @@
+.star-icon{
+    position: relative;
+}
+.star-icon::after{
+    content:"";
+    background-color: white;
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: -90px;
+    transform: translateY(-50%);
+}
+.star-icon::before{
+    content:"";
+    background-color: white;
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    right: -90px;
+    transform: translateY(-50%);
+}
+section{
+    background-color: #1abc9c;
+    min-height: calc(-90px + 100vh);
+}
